@@ -1,0 +1,58 @@
+package com.capgemini.domain;
+
+
+import javax.annotation.Generated;
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.util.List;
+
+@Entity
+@Table(name = "keeper")
+public class KeeperEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "keeper_id", length = 11)
+    private Integer id;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "employee_id")
+    private EmployeeEntity employee;
+
+//    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="keeper")
+//    @JoinColumn(name = "keep_car_id", referencedColumnName="car_id")
+
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(name = "keeper_to_car",
+            joinColumns = @JoinColumn(name = "employee_id"),
+            inverseJoinColumns = @JoinColumn(name = "keep_car_id")
+    )
+    private List<CarEntity> cars;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public EmployeeEntity getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(EmployeeEntity employee) {
+        this.employee = employee;
+    }
+
+    public List<CarEntity> getCars() {
+        return cars;
+    }
+
+    public void setCars(List<CarEntity> cars) {
+        this.cars = cars;
+    }
+}
