@@ -11,6 +11,7 @@ public class OfficeMapper {
             return null;
 
         OfficeEntity officeEntity = new OfficeEntity();
+        officeEntity.setId(officeTO.getId());
         officeEntity.setAdress(officeTO.getAdress());
         officeEntity.setTelephone(officeTO.getTelephone());
         officeEntity.setEmail(officeTO.getEmail());
@@ -25,6 +26,7 @@ public class OfficeMapper {
             return null;
 
         OfficeTO officeTO = new OfficeTO();
+        officeTO.setId(officeTO.getId());
         officeTO.setAdress(officeEntity.getAdress());
         officeTO.setTelephone(officeEntity.getTelephone());
         officeTO.setEmail(officeEntity.getTelephone());

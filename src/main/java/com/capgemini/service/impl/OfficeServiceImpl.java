@@ -59,8 +59,8 @@ public class OfficeServiceImpl implements OfficeService {
     }
 
     @Override
-    public List<EmployeeTO> findAllOfficeEmployeesByKeepCarId(Integer carId) {
-        List<EmployeeEntity> keeperFromOffice = employeeRepository.findAllOfficeEmployeesByKeepCarId(carId);
+    public List<EmployeeTO> findAllOfficeEmployeesByKeepCarId(Integer officeId, Integer carId) {
+        List<EmployeeEntity> keeperFromOffice = employeeRepository.findAllOfficeEmployeesByKeepCarId(officeId, carId);
         return EmployeeMapper.map2TOs(keeperFromOffice);
     }
 }

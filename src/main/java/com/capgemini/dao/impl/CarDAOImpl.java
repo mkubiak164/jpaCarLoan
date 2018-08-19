@@ -25,8 +25,8 @@ public class CarDAOImpl extends AbstractDao<CarEntity, Integer> implements CarDA
     public List<CarEntity> findByKeeper(Integer keeperId) {
 
         TypedQuery<CarEntity> query = entityManager.createQuery(
-                "select car from CarEntity car where upper(car.keeper) like concat(upper(:keeper), '%')", CarEntity.class);
-        query.setParameter("keeper", keeperId);
+                "select car from CarEntity car where :keeperId in :car.keepers.id", CarEntity.class);
+        query.setParameter("keeperId", keeperId);
         return query.getResultList();
     }
 

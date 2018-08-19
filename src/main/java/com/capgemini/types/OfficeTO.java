@@ -2,7 +2,24 @@ package com.capgemini.types;
 
 public class OfficeTO {
 
+    private Integer id;
     private String adress;
+    private String telephone;
+    private String email;
+
+    public OfficeTO() {
+
+    }
+
+
+    public OfficeTO(Integer id, String adress, String telephone, String email) {
+        this.id = id;
+        this.adress = adress;
+        this.telephone = telephone;
+        this.email = email;
+
+    }
+
 
     public String getAdress() {
         return adress;
@@ -28,19 +45,15 @@ public class OfficeTO {
         this.email = email;
     }
 
-    private String telephone;
-    private String email;
-
-    public OfficeTO() {
-
+    public Integer getId() {
+        return id;
     }
 
-    public OfficeTO(String adress, String telephone, String email) {
-        this.adress = adress;
-        this.telephone = telephone;
-        this.email = email;
-
+    public void setId(Integer id) {
+        this.id = id;
     }
+
+
 
 
 

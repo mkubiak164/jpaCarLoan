@@ -19,7 +19,7 @@ public interface OfficeService {
 
     List<EmployeeTO> findAllOfficeEmployees (Integer officeId);
 
-    List<EmployeeTO> findAllOfficeEmployeesByKeepCarId (Integer carId);
+    List<EmployeeTO> findAllOfficeEmployeesByKeepCarId (Integer officeId, Integer carId);
 
 
 }

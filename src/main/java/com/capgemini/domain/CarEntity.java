@@ -10,8 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "car")
-
-public class CarEntity {
+public class CarEntity extends BaseEntity {
 
     @Id
     @NotNull
