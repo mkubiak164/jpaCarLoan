@@ -18,5 +18,9 @@ public interface CarService {
 
     List<CarTO> findByKeeper (Integer keeperId);
 
+    List<CarTO> findAllCars ();
+
+    CarTO findById(Integer id);
+
 
 }

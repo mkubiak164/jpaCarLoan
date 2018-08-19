@@ -17,6 +17,8 @@ public class EmployeeMapper {
         employeeEntity.setName(employeeTO.getName());
         employeeEntity.setLastName(employeeTO.getLastName());
         employeeEntity.setDateOfBirth(employeeTO.getDateOfBirth());
+        employeeEntity.setEmpPosition(employeeTO.getEmpPosition());
+        employeeEntity.setOffice(employeeTO.getOffice());
 
         return employeeEntity;
     }
@@ -30,6 +32,8 @@ public class EmployeeMapper {
         EmployeeTO employeeTO = new EmployeeTO();
         employeeTO.setName(employeeEntity.getName());
         employeeTO.setLastName(employeeEntity.getLastName());
+        employeeTO.setDateOfBirth(employeeEntity.getDateOfBirth());
+        employeeTO.setEmpPosition(employeeEntity.getEmpPosition());
         employeeTO.setDateOfBirth(employeeEntity.getDateOfBirth());
 
         return employeeTO;

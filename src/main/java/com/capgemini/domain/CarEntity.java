@@ -1,6 +1,8 @@
 package com.capgemini.domain;
 
 
+import com.sun.istack.internal.NotNull;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -12,6 +14,7 @@ import java.util.List;
 public class CarEntity {
 
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "car_id", length = 11)
     private Integer id;
@@ -38,7 +41,7 @@ public class CarEntity {
     private Integer mileage;
 
     @OneToOne(mappedBy = "car", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
+            fetch = FetchType.LAZY)
     private LoanEntity loan;
 
     @ManyToMany(mappedBy = "cars")
@@ -115,6 +118,7 @@ public class CarEntity {
 
     public void setLoan(LoanEntity loan) {
         this.loan = loan;
+        this.loan.setCar(this);
     }
 
     public List<KeeperEntity> getKeepers() {

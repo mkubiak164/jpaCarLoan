@@ -29,7 +29,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public CarTO editCar(CarTO carTO) {
-        CarEntity carEntity = carRepository.save(CarMapper.toCarEntity(carTO));
+        CarEntity carEntity = CarMapper.toCarEntity(carTO);
         carRepository.update(carEntity);
         return CarMapper.toCarTO(carEntity);
     }
@@ -44,6 +44,16 @@ public class CarServiceImpl implements CarService {
     public List<CarTO> findByKeeper(Integer keeperId) {
         List<CarEntity> carsByKeeper = carRepository.findByKeeper(keeperId);
         return CarMapper.map2TOs(carsByKeeper);
+    }
+
+    @Override
+    public List<CarTO> findAllCars() {
+        return CarMapper.map2TOs(carRepository.findAll());
+    }
+
+    @Override
+    public CarTO findById(Integer id) {
+        return CarMapper.toCarTO(carRepository.findOne(id));
     }
 
     @Override

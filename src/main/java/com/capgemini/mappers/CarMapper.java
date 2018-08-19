@@ -13,6 +13,7 @@ public class CarMapper {
         if(carTO == null)
             return null;
         CarEntity carEntity = new CarEntity();
+        carEntity.setId(carTO.getId());
         carEntity.setCarType(carTO.getCarType());
         carEntity.setMark(carTO.getMark());
         carEntity.setYearOfProduction(carTO.getYearOfProduction());
@@ -30,6 +31,7 @@ public class CarMapper {
         if(carEntity == null)
             return null;
         CarTO carTO = new CarTO();
+        carTO.setId(carEntity.getId());
         carTO.setCarType(carEntity.getCarType());
         carTO.setMark(carEntity.getMark());
         carTO.setYearOfProduction(carEntity.getYearOfProduction());

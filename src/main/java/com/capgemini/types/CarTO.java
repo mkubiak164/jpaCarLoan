@@ -5,6 +5,9 @@ import java.util.Date;
 
 public class CarTO {
 
+
+
+    private Integer id;
     private String carType;
     private String mark;
     private LocalDate yearOfProduction;
@@ -17,10 +20,11 @@ public class CarTO {
 
     }
 
-    public CarTO(String carType, String mark, LocalDate yearOfProduction,
+    public CarTO(Integer id, String carType, String mark, LocalDate yearOfProduction,
                  String color, Integer engineCapacity, Double power,
                  Integer mileage) {
 
+        this.id = id;
         this.carType = carType;
         this.mark = mark;
         this.yearOfProduction = yearOfProduction;
@@ -31,6 +35,14 @@ public class CarTO {
 
     }
 
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
     public String getCarType() {
         return carType;
     }
