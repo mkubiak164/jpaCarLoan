@@ -8,8 +8,6 @@ import java.util.stream.Collectors;
 
 public class CarMapper {
 
-
-
     public static CarEntity toCarEntity(CarTO carTO) {
 
         if(carTO == null)
