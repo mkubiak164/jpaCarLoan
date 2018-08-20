@@ -49,9 +49,10 @@ public class CarServiceTest {
         //given
         List<CarTO> allCars = carService.findAllCars();
         final int sizeBefore = allCars.size();
+        Integer id = allCars.get(allCars.size()-1).getId();
 
         //when
-        carService.removeCar(1);
+        carService.removeCar(id);
 
         //then
         List<CarTO> allCarsAfter = carService.findAllCars();
@@ -63,21 +64,20 @@ public class CarServiceTest {
     public void shouldUpdateCar() {
         //given
         CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
+        List<CarTO> all = carService.findAllCars();
+        Integer id = all.get(all.size()-1).getId();
 
         //when
         carService.editCar(carTO);
 
         //then
-        CarTO carTO2 = carService.findById(1);
+        CarTO carTO2 = carService.findById(id);
         Assertions.assertThat(carTO2.getCarType().equalsIgnoreCase("Kombi"));
     }
 
     @Test
     @Sql({"carInsert.sql"})
     public void shouldFindByTypeAndMark() {
-        //given
-//        CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
-//        CarTO carTO2 = new CarToBuilder().withCarType("Sedan").withMark("Opel").build();
 
         //when
         List<CarTO> foundCars = carService.findByTypeAndMark("Kombi", "KIA");
@@ -86,7 +86,16 @@ public class CarServiceTest {
         Assertions.assertThat(foundCars.size()).isEqualTo(1);
     }
 
+    @Test
+    @Sql({"carInsert.sql"})
+    public void shouldFindByKeeper() {
 
+        //when
+        List<CarTO> foundCars = carService.findByKeeper(34);
+
+        //then
+        Assertions.assertThat(foundCars.size()).isEqualTo(1);
+    }
 
 
 }

@@ -30,6 +30,9 @@ public class OfficeServiceTest {
     @Autowired
     private OfficeService officeService;
 
+    @Autowired
+    private EmployeeService employeeService;
+
     @Test
     @Sql({"officeInsert.sql"})
     public void shouldAddOffice() {
@@ -50,13 +53,12 @@ public class OfficeServiceTest {
    @Sql({"officeInsert.sql"})
     public void shouldRemoveOffice() {
         //given
-        OfficeTO officeTO = new OfficeTOBuilder().withAdress("Mielno").withEmail("mielno@samochod.pl").build();
-        officeService.addOffice(officeTO);
         List<OfficeTO> allOffices = officeService.findAllOffices();
         final int sizeBefore = allOffices.size();
+        Integer id = allOffices.get(allOffices.size()-1).getId();
 
         //when
-        officeService.removeOffice(officeTO.getId());
+        officeService.removeOffice(id);
 
         //then
         List<OfficeTO> allOfficesAfter = officeService.findAllOffices();
@@ -64,44 +66,60 @@ public class OfficeServiceTest {
     }
 
     @Test
+    @Sql({"officeInsert.sql"})
     public void shouldUpdateOffice() {
         //given
         OfficeTO officeTO = new OfficeTOBuilder().withAdress("lalaland").withEmail("lalaland@auto.pl").build();
+        List<OfficeTO> all = officeService.findAllOffices();
+        Integer id = all.get(all.size()-1).getId();
 
         //when
         officeService.editOffice(officeTO);
 
         //then
-        OfficeTO officeTO1 = officeService.findbyId(1);
-        Assertions.assertThat(officeTO1.getAdress().equalsIgnoreCase("Lalaland"));
-
+        OfficeTO officeTO1 = officeService.findbyId(id);
+        Assertions.assertThat(officeTO1.getAdress().equalsIgnoreCase("lalaland"));
     }
 
     @Test
+    @Sql({"officeInsert.sql"})
     public void shouldAddEmployeeToOffice() {
         //given
-        EmployeeTO employeeTO = new EmployeeTOBuilder().withName("Jan").withLastName("Kokos").build();
+        List<OfficeTO> allOffices = officeService.findAllOffices();
+        OfficeTO officeTO = allOffices.get(allOffices.size()-1);
+        Integer id = officeTO.getId();
 
         //when
-        officeService.addEmployeeToOffice(1, 1);
+        officeService.addEmployeeToOffice(88, id);
 
         //then
-
+        Assertions.assertThat(employeeService.findById(88).getOffice().getId()).isEqualTo(id);
     }
 
     @Test
+    @Sql({"officeInsert.sql"})
     public void shouldRemoveEmployeeFromOffice() {
+        //when
+        officeService.removeEmployeeFromOffice(63, 96 );
 
+        //then
+        Assertions.assertThat(employeeService.findById(63).getOffice()).isEqualTo(null);
     }
 
     @Test
+    @Sql({"officeInsert.sql"})
     public void shouldShowOfficeEmployees() {
+        //given
+        List<OfficeTO> allOffices = officeService.findAllOffices();
+        OfficeTO officeTO = allOffices.get(allOffices.size()-1);
+        Integer id = officeTO.getId();
 
+        //when
+        List<EmployeeTO> allOfficeEmployees = officeService.findAllOfficeEmployees(id);
+
+        //then
+        Assertions.assertThat(allOfficeEmployees.size()).isEqualTo(1);
     }
-
-
-
-
 
 
 }

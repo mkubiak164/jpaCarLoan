@@ -6,11 +6,11 @@ import com.capgemini.service.EmployeeService;
 import com.capgemini.types.EmployeeSearchCriteria;
 import com.capgemini.types.EmployeeTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.ParameterExpression;
 import java.util.List;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
@@ -20,5 +20,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<EmployeeTO> findEmployeeBy(EmployeeSearchCriteria employeeSearchCriteria) {
 
        return EmployeeMapper.map2TOs(employeeDAO.findEmployeeBy(employeeSearchCriteria));
+    }
+
+    @Override
+    public EmployeeTO findById(Integer id) {
+        return EmployeeMapper.toEmployeeTO(employeeDAO.findOne(id));
     }
 }

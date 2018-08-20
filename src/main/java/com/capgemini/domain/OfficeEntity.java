@@ -2,10 +2,7 @@ package com.capgemini.domain;
 
 
 import com.sun.istack.internal.NotNull;
-
-import javax.annotation.Generated;
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "office")
@@ -29,10 +26,6 @@ public class OfficeEntity extends BaseEntity{
     @OneToOne(mappedBy = "office", cascade = CascadeType.ALL,
             fetch = FetchType.LAZY)
     private EmployeeEntity employee;
-
-  /*  @OneToOne(mappedBy = "customer", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
-    private CustomerEntity customer;*/
 
     @OneToOne(mappedBy = "officeFrom", cascade = CascadeType.ALL,
             fetch = FetchType.LAZY)
@@ -81,14 +74,6 @@ public class OfficeEntity extends BaseEntity{
     public void setEmployee(EmployeeEntity employee) {
         this.employee = employee;
     }
-
-    /*public CustomerEntity getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(CustomerEntity customer) {
-        this.customer = customer;
-    }*/
 
     public LoanEntity getLoanFrom() {
         return loanFrom;

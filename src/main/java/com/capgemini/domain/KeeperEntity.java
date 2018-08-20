@@ -3,9 +3,7 @@ package com.capgemini.domain;
 
 import com.sun.istack.internal.NotNull;
 
-import javax.annotation.Generated;
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -21,9 +19,6 @@ public class KeeperEntity extends BaseEntity{
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     private EmployeeEntity employee;
-
-//    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="keeper")
-//    @JoinColumn(name = "keep_car_id", referencedColumnName="car_id")
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,

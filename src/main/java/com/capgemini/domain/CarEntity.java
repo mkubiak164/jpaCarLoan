@@ -3,7 +3,6 @@ package com.capgemini.domain;
 
 import com.sun.istack.internal.NotNull;
 
-import javax.annotation.Generated;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -39,7 +38,7 @@ public class CarEntity extends BaseEntity {
     @Column(name = "mileage", length = 10)
     private Integer mileage;
 
-    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL,
+    @OneToOne(mappedBy = "car", cascade = CascadeType.REMOVE,
             fetch = FetchType.LAZY)
     private LoanEntity loan;
 

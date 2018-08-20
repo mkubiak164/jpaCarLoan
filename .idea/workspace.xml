@@ -2,26 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33621c3e-9131-448a-8125-af9b2990dfbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTOBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/CarDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/CarDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/KeeperDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/KeeperDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/AuthorEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/BookEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/AuthorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/BookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/types/AuthorTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/types/BookTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/capgemini/AllTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/capgemini/service/BookServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/carInsert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-hsql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-hsql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-mysql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/CustomerEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/CustomerEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/EmpPositionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/EmpPositionEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/EmployeeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/EmployeeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/KeeperEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/KeeperEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/LoanEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/LoanEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/OfficeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/OfficeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/capgemini/service/ServiceTestSuite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/dao/BookDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/dao/impl/BookDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/AuthorEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/BookEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/domain/CarEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capgemini/domain/CarEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/mappers/AuthorMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/mappers/BookMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/types/AuthorTO$AuthorTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/types/AuthorTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/types/BookTO$BookTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capgemini/types/BookTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/capgemini/AllTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/capgemini/service/BookServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/capgemini/service/ServiceTestSuite.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,225 +58,66 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/starter_kit_jpa_starter$com_capgemini_service_in_starter_kit_jpa_starter.ic" NAME="com.capgemini.service in starter-kit-jpa-starter Coverage Results" MODIFIED="1534771212188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/starter_kit_jpa_starter$com_capgemini_service_in_starter_kit_jpa_starter.ic" NAME="com.capgemini.service in starter-kit-jpa-starter Coverage Results" MODIFIED="1534797409224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.capgemini.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/starter_kit_jpa_starter$All_in_starter_kit_jpa_starter.ic" NAME="All in starter-kit-jpa-starter Coverage Results" MODIFIED="1534797676742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="290" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1110967486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="17" />
-          <entry key="java" value="254" />
+          <entry key="class" value="20" />
+          <entry key="java" value="321" />
           <entry key="properties" value="7" />
-          <entry key="sql" value="9" />
+          <entry key="sql" value="15" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="17" />
-          <entry key="JAVA" value="254" />
+          <entry key="CLASS" value="20" />
+          <entry key="JAVA" value="321" />
           <entry key="Properties" value="7" />
-          <entry key="SQL" value="9" />
+          <entry key="SQL" value="15" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12805" />
+          <entry key="java" value="13766" />
           <entry key="properties" value="8" />
-          <entry key="sql" value="547" />
-          <entry key="txt" value="203" />
+          <entry key="sql" value="837" />
+          <entry key="txt" value="275" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12805" />
-          <entry key="PLAIN_TEXT" value="203" />
+          <entry key="JAVA" value="13766" />
+          <entry key="PLAIN_TEXT" value="275" />
           <entry key="Properties" value="8" />
-          <entry key="SQL" value="547" />
+          <entry key="SQL" value="837" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4407767">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="302">
-                  <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2488#2489#0" expanded="true" />
-                    <element signature="e#2515#2516#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTOBuilder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="966">
-                  <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/CarServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#708#709#0" expanded="true" />
-                    <element signature="e#748#749#0" expanded="true" />
-                    <element signature="e#1442#1443#0" expanded="true" />
-                    <element signature="e#1507#1508#0" expanded="true" />
-                    <element signature="e#1562#1563#0" expanded="true" />
-                    <element signature="e#1629#1630#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/CarToBuilder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="296">
-                  <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -292,34 +160,34 @@
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/CarTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/CarMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTOBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/EmployeeDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-mysql.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-hsql.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data-hsqldb.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/CustomerEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmpPositionEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/CarToBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/CarDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/KeeperDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTOBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTOBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/CarDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java" />
       </list>
     </option>
   </component>
@@ -363,6 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -487,15 +357,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="capgemini" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="starter-kit-jpa-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="starter-kit-jpa-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="capgemini" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -517,14 +378,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="empl&#9;FILE&#9;file://C:/Projects/jpa/starter-kit-jpa-starter/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java&#10;CarE&#9;FILE&#9;file://C:/Projects/jpa/starter-kit-jpa-starter/src/main/java/com/capgemini/domain/CarEntity.java&#10;care&#9;FILE&#9;file://C:/Projects/jpa/starter-kit-jpa-starter/src/main/java/com/capgemini/domain/CarEntity.java&#10;CarSTe&#9;FILE&#9;file://C:/Projects/jpa/starter-kit-jpa-starter/src/test/java/com/capgemini/service/CarServiceTest.java&#10;CarEn&#9;FILE&#9;file://C:/Projects/jpa/starter-kit-jpa-starter/src/main/java/com/capgemini/domain/CarEntity.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534775505470" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534799946411" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -559,8 +418,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarServiceTest.shouldRemoveCar">
-    <configuration name="CarServiceTest.shouldFindByTypeAndMark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.capgemini.service in starter-kit-jpa-starter">
+    <configuration name="All in starter-kit-jpa-starter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="starter-kit-jpa-starter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarServiceTest.shouldFindByKeeper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="starter-kit-jpa-starter" />
       <extension name="coverage">
         <pattern>
@@ -570,45 +437,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.capgemini.service" />
       <option name="MAIN_CLASS_NAME" value="com.capgemini.service.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldFindByTypeAndMark" />
+      <option name="METHOD_NAME" value="shouldFindByKeeper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarServiceTest.shouldRemoveCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="starter-kit-jpa-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.capgemini.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.capgemini.service" />
-      <option name="MAIN_CLASS_NAME" value="com.capgemini.service.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldRemoveCar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarServiceTest.shouldUpdateCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="starter-kit-jpa-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.capgemini.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.capgemini.service" />
-      <option name="MAIN_CLASS_NAME" value="com.capgemini.service.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldUpdateCar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OfficeServiceTest.shouldUpdateOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OfficeServiceTest.shouldAddEmployeeToOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="starter-kit-jpa-starter" />
       <extension name="coverage">
         <pattern>
@@ -618,7 +453,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.capgemini.service" />
       <option name="MAIN_CLASS_NAME" value="com.capgemini.service.OfficeServiceTest" />
-      <option name="METHOD_NAME" value="shouldUpdateOffice" />
+      <option name="METHOD_NAME" value="shouldAddEmployeeToOffice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OfficeServiceTest.shouldRemoveEmployeeFromOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="starter-kit-jpa-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capgemini.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capgemini.service" />
+      <option name="MAIN_CLASS_NAME" value="com.capgemini.service.OfficeServiceTest" />
+      <option name="METHOD_NAME" value="shouldRemoveEmployeeFromOffice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -639,19 +490,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CarServiceTest.shouldRemoveCar" />
-      <item itemvalue="JUnit.CarServiceTest.shouldUpdateCar" />
-      <item itemvalue="JUnit.CarServiceTest.shouldFindByTypeAndMark" />
-      <item itemvalue="JUnit.OfficeServiceTest.shouldUpdateOffice" />
+      <item itemvalue="JUnit.OfficeServiceTest.shouldAddEmployeeToOffice" />
+      <item itemvalue="JUnit.OfficeServiceTest.shouldRemoveEmployeeFromOffice" />
       <item itemvalue="JUnit.com.capgemini.service in starter-kit-jpa-starter" />
+      <item itemvalue="JUnit.All in starter-kit-jpa-starter" />
+      <item itemvalue="JUnit.CarServiceTest.shouldFindByKeeper" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarServiceTest.shouldRemoveCar" />
         <item itemvalue="JUnit.com.capgemini.service in starter-kit-jpa-starter" />
-        <item itemvalue="JUnit.OfficeServiceTest.shouldUpdateOffice" />
-        <item itemvalue="JUnit.CarServiceTest.shouldFindByTypeAndMark" />
-        <item itemvalue="JUnit.CarServiceTest.shouldUpdateCar" />
+        <item itemvalue="JUnit.CarServiceTest.shouldFindByKeeper" />
+        <item itemvalue="JUnit.OfficeServiceTest.shouldAddEmployeeToOffice" />
+        <item itemvalue="JUnit.All in starter-kit-jpa-starter" />
+        <item itemvalue="JUnit.OfficeServiceTest.shouldRemoveEmployeeFromOffice" />
       </list>
     </recent_temporary>
   </component>
@@ -694,46 +545,52 @@
       <option name="project" value="LOCAL" />
       <updated>1534758348130</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working inserts, more working tests, employeeBuilder and others">
+      <created>1534775563010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534775563010</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarServiceTest_shouldRemoveCar - 2018.08.20 at 14h 02m 59s.xml">
-      <configuration name="CarServiceTest.shouldRemoveCar" configurationId="JUnit" />
+    <history-entry file="OfficeServiceTest_shouldRemoveEmployeeFromOffice - 2018.08.20 at 22h 35m 22s.xml">
+      <configuration name="OfficeServiceTest.shouldRemoveEmployeeFromOffice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarServiceTest_shouldRemoveCar - 2018.08.20 at 14h 11m 45s.xml">
-      <configuration name="CarServiceTest.shouldRemoveCar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldRemoveCar - 2018.08.20 at 14h 12m 11s.xml">
-      <configuration name="CarServiceTest.shouldRemoveCar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldUpdateCar - 2018.08.20 at 14h 14m 43s.xml">
-      <configuration name="CarServiceTest.shouldUpdateCar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldUpdateCar - 2018.08.20 at 14h 15m 35s.xml">
-      <configuration name="CarServiceTest.shouldUpdateCar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldFindByTypeAndMark - 2018.08.20 at 14h 15m 54s.xml">
-      <configuration name="CarServiceTest.shouldFindByTypeAndMark" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OfficeServiceTest_shouldUpdateOffice - 2018.08.20 at 14h 30m 27s.xml">
-      <configuration name="OfficeServiceTest.shouldUpdateOffice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_capgemini_service_in_starter-kit-jpa-starter - 2018.08.20 at 15h 20m 24s.xml">
+    <history-entry file="com_capgemini_service_in_starter-kit-jpa-starter - 2018.08.20 at 22h 37m 10s.xml">
       <configuration name="com.capgemini.service in starter-kit-jpa-starter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarServiceTest_shouldRemoveCar - 2018.08.20 at 15h 22m 00s.xml">
-      <configuration name="CarServiceTest.shouldRemoveCar" configurationId="JUnit" />
+    <history-entry file="All_in_starter-kit-jpa-starter - 2018.08.20 at 22h 41m 49s.xml">
+      <configuration name="All in starter-kit-jpa-starter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarServiceTest_shouldRemoveCar - 2018.08.20 at 15h 22m 03s.xml">
-      <configuration name="CarServiceTest.shouldRemoveCar" configurationId="JUnit" />
+    <history-entry file="OfficeServiceTest_shouldAddEmployeeToOffice - 2018.08.20 at 22h 45m 36s.xml">
+      <configuration name="OfficeServiceTest.shouldAddEmployeeToOffice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OfficeServiceTest_shouldAddEmployeeToOffice - 2018.08.20 at 22h 46m 08s.xml">
+      <configuration name="OfficeServiceTest.shouldAddEmployeeToOffice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OfficeServiceTest_shouldAddEmployeeToOffice - 2018.08.20 at 22h 54m 50s.xml">
+      <configuration name="OfficeServiceTest.shouldAddEmployeeToOffice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest_shouldFindByKeeper - 2018.08.20 at 22h 56m 17s.xml">
+      <configuration name="CarServiceTest.shouldFindByKeeper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest_shouldFindByKeeper - 2018.08.20 at 23h 03m 43s.xml">
+      <configuration name="CarServiceTest.shouldFindByKeeper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_capgemini_service_in_starter-kit-jpa-starter - 2018.08.20 at 23h 09m 47s.xml">
+      <configuration name="com.capgemini.service in starter-kit-jpa-starter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OfficeServiceTest_shouldAddEmployeeToOffice - 2018.08.20 at 23h 13m 39s.xml">
+      <configuration name="OfficeServiceTest.shouldAddEmployeeToOffice" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17024705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32062298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -742,7 +599,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946293" visible="true" weight="0.31638417" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946293" weight="0.43276837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47118643" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -751,7 +608,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053704" side_tool="true" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946293" weight="0.3299435" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3299435" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.14017186" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -760,6 +616,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32975295" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.36251342" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1933405" />
@@ -798,10 +655,16 @@
     <MESSAGE value="CarService tests" />
     <MESSAGE value="BaseEntity, sql logging, EmployeeSearchCriteria, fixes in previous files" />
     <MESSAGE value="OfficeService tests, JavaDocs, fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="OfficeService tests, JavaDocs, fixes" />
+    <MESSAGE value="working inserts, more working tests, employeeBuilder and others" />
+    <option name="LAST_COMMIT_MESSAGE" value="working inserts, more working tests, employeeBuilder and others" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>employeeService.findById(88)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>carService.findAllCars()</expression-string>
         <language-id>JAVA</language-id>
@@ -825,162 +688,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar!/org/springframework/test/context/jdbc/Sql.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/CarTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/SequenceGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTOBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/CarDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/OfficeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-mysql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/EmployeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-hsql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/BookEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmpPositionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/CustomerEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -999,13 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="149" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="e#2511#2512#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#4757#4758#0" expanded="true" />
-            <element signature="e#14663#14664#0" expanded="true" />
-            <element signature="e#14707#14708#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,9 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#789#790#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,86 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/CarMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data-hsqldb.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/OfficeDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,10 +744,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/ServiceTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/AllTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/CascadeType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/hibernate/hibernate-entitymanager/5.0.9.Final/hibernate-entitymanager-5.0.9.Final.jar!/org/hibernate/jpa/spi/AbstractEntityManagerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="734" column="17" selection-start-line="734" selection-start-column="17" selection-end-line="734" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/${env.BASE_DIR}/maven/repo/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding>
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/CarDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="635">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1135,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/EmployeeDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="1596">
+          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1153,53 +861,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/impl/OfficeDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/carInsert.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/CarDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/KeeperDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/dao/OfficeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="57" />
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/CarEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/CustomerEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmployeeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/EmpPositionEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/KeeperEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/LoanEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-940">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/domain/OfficeEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state relative-caret-position="488">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/CarMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/mappers/OfficeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/OfficeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        <state relative-caret-position="1223">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2488#2489#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/capgemini/service/officeInsert.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/CarServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="257">
+          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#708#709#0" expanded="true" />
@@ -1212,54 +1017,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/impl/EmployeeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/CarTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/CarToBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
+        <state relative-caret-position="554">
           <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeSearchCriteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/EmployeeTOBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="509">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/OfficeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/service/EmployeeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capgemini/types/OfficeTOBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="26">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/OfficeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1268,8 +1088,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/capgemini/service/CarServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="530">
+          <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -4,7 +4,6 @@ import com.capgemini.domain.OfficeEntity;
 import com.capgemini.types.OfficeTO;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class OfficeMapper {
@@ -30,7 +29,7 @@ public class OfficeMapper {
             return null;
 
         OfficeTO officeTO = new OfficeTO();
-        officeTO.setId(officeTO.getId());
+        officeTO.setId(officeEntity.getId());
         officeTO.setAdress(officeEntity.getAdress());
         officeTO.setTelephone(officeEntity.getTelephone());
         officeTO.setEmail(officeEntity.getTelephone());

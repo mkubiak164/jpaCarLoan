@@ -9,4 +9,6 @@ public interface EmployeeService {
 
     public List<EmployeeTO> findEmployeeBy(EmployeeSearchCriteria employeeSearchCriteria);
 
+    public EmployeeTO findById(Integer id);
+
 }

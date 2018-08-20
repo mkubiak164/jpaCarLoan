@@ -44,12 +44,17 @@ public class OfficeServiceImpl implements OfficeService {
 
     @Override
     public void addEmployeeToOffice(Integer employeeId, Integer officeId) {
-
+        EmployeeEntity employeeEntity = employeeRepository.findOne(employeeId);
+        OfficeEntity officeEntity = officeRepository.findOne(officeId);
+        employeeEntity.setOffice(officeEntity);
+        employeeRepository.update(employeeEntity);
     }
 
     @Override
     public void removeEmployeeFromOffice(Integer employeeId, Integer officeId) {
-
+        EmployeeEntity employeeEntity = employeeRepository.findOne(employeeId);
+        employeeEntity.setOffice(null);
+        employeeRepository.update(employeeEntity);
     }
 
     @Override
@@ -58,12 +63,6 @@ public class OfficeServiceImpl implements OfficeService {
         return EmployeeMapper.map2TOs(employeesFromOffice);
     }
 
-    /**
-     * metoda zwracająca opiekunów auta z danej placówki
-     * @param officeId
-     * @param carId
-     * @return
-     */
     @Override
     public List<EmployeeTO> findAllOfficeEmployeesByKeepCarId(Integer officeId, Integer carId) {
         List<EmployeeEntity> keeperFromOffice = employeeRepository.findAllOfficeEmployeesByKeepCarId(officeId, carId);
