@@ -17,6 +17,7 @@ public class KeeperDAOImpl extends AbstractDao<KeeperEntity, Integer> implements
         keeper.getCars().add(carEntity);
     }
 
+    @Override
     public List<CarEntity> findByKeeper(Integer keeperId) {
         KeeperEntity keeper = findOne(keeperId);
         return keeper.getCars();

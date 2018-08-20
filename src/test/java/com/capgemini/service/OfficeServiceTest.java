@@ -1,6 +1,8 @@
 package com.capgemini.service;
 
 
+import com.capgemini.types.EmployeeTO;
+import com.capgemini.types.EmployeeTOBuilder;
 import com.capgemini.types.OfficeTO;
 import com.capgemini.types.OfficeTOBuilder;
 import org.assertj.core.api.Assertions;
@@ -28,9 +30,8 @@ public class OfficeServiceTest {
     @Autowired
     private OfficeService officeService;
 
-
     @Test
-   // @Sql({"data-hsqldb.sql"})
+    @Sql({"officeInsert.sql"})
     public void shouldAddOffice() {
         //given
         OfficeTO officeTO = new OfficeTOBuilder().withAdress("Mielno").withEmail("mielno@samochod.pl").build();
@@ -45,15 +46,17 @@ public class OfficeServiceTest {
         Assertions.assertThat(allOfficesAfter.size()).isEqualTo(sizeBefore+1);
     }
 
-    @Test
-    @Sql({"data-hsqldb.sql"})
+   @Test
+   @Sql({"officeInsert.sql"})
     public void shouldRemoveOffice() {
         //given
+        OfficeTO officeTO = new OfficeTOBuilder().withAdress("Mielno").withEmail("mielno@samochod.pl").build();
+        officeService.addOffice(officeTO);
         List<OfficeTO> allOffices = officeService.findAllOffices();
         final int sizeBefore = allOffices.size();
 
         //when
-        officeService.removeOffice(1);
+        officeService.removeOffice(officeTO.getId());
 
         //then
         List<OfficeTO> allOfficesAfter = officeService.findAllOffices();
@@ -62,11 +65,27 @@ public class OfficeServiceTest {
 
     @Test
     public void shouldUpdateOffice() {
+        //given
+        OfficeTO officeTO = new OfficeTOBuilder().withAdress("lalaland").withEmail("lalaland@auto.pl").build();
+
+        //when
+        officeService.editOffice(officeTO);
+
+        //then
+        OfficeTO officeTO1 = officeService.findbyId(1);
+        Assertions.assertThat(officeTO1.getAdress().equalsIgnoreCase("Lalaland"));
 
     }
 
     @Test
     public void shouldAddEmployeeToOffice() {
+        //given
+        EmployeeTO employeeTO = new EmployeeTOBuilder().withName("Jan").withLastName("Kokos").build();
+
+        //when
+        officeService.addEmployeeToOffice(1, 1);
+
+        //then
 
     }
 

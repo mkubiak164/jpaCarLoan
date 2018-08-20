@@ -12,6 +12,12 @@ import java.util.List;
 
 @Repository
 public class EmployeeDAOImpl extends AbstractDao<EmployeeEntity, Integer> implements EmployeeDAO {
+
+    /**
+     * metoda wyświetlająca wszystkich pracowników z danej placówki
+     * @param officeId
+     * @return zwraca listę pracowników
+     */
     @Override
     public List<EmployeeEntity> findAllOfficeEmployees(Integer officeId) {
         TypedQuery<EmployeeEntity> query = entityManager.createQuery(
@@ -21,7 +27,12 @@ public class EmployeeDAOImpl extends AbstractDao<EmployeeEntity, Integer> implem
     }
 
 
-
+    /**
+     * metoda pozwalająca wyszukać pracowników z danej placówki, którzy opiekują sie danym autem
+     * @param officeId
+     * @param carId
+     * @return zwraca listę pracowników
+     */
     @Override
     public List<EmployeeEntity> findAllOfficeEmployeesByKeepCarId(Integer officeId, Integer carId) {
         TypedQuery<EmployeeEntity> query = entityManager.createQuery(
@@ -35,7 +46,7 @@ public class EmployeeDAOImpl extends AbstractDao<EmployeeEntity, Integer> implem
     /**
      * metoda pozwalająca wyszukać pracownika po wybranych informacjach reprezentowanych przez obiekt
      * @param employeeSearchCriteria
-     * @return zwraca listę rezultatów
+     * @return zwraca listę rezultatów(pracowników)
      */
     @Override
     public List<EmployeeEntity> findEmployeeBy(EmployeeSearchCriteria employeeSearchCriteria) {
@@ -62,10 +73,6 @@ public class EmployeeDAOImpl extends AbstractDao<EmployeeEntity, Integer> implem
 
         return entityManager.createQuery(query).getResultList();
     }
-
-
-
-
 
 
 

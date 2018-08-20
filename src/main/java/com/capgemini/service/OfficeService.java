@@ -21,6 +21,7 @@ public interface OfficeService {
 
     List<EmployeeTO> findAllOfficeEmployeesByKeepCarId (Integer officeId, Integer carId);
 
-
     List<OfficeTO> findAllOffices();
+
+    OfficeTO findbyId(Integer id);
 }

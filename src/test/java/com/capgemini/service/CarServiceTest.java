@@ -28,12 +28,6 @@ public class CarServiceTest {
     @Autowired
     private CarService carService;
 
-    @Before
-    public void init() {
-        CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
-        carService.addCar(carTO);
-    }
-
     @Test
     public void shouldAddCar() {
         //given
@@ -49,8 +43,8 @@ public class CarServiceTest {
         Assertions.assertThat(allCarsAfter.size()).isEqualTo(sizeBefore + 1);
     }
 
-
     @Test
+    @Sql({"carInsert.sql"})
     public void shouldRemoveCar() {
         //given
         List<CarTO> allCars = carService.findAllCars();
@@ -65,7 +59,7 @@ public class CarServiceTest {
     }
 
     @Test
-//    @Sql({"carInsert.sql"})
+    @Sql({"carInsert.sql"})
     public void shouldUpdateCar() {
         //given
         CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
@@ -78,10 +72,8 @@ public class CarServiceTest {
         Assertions.assertThat(carTO2.getCarType().equalsIgnoreCase("Kombi"));
     }
 
-
     @Test
-//    @Sql({"carInsert.sql"})
-//    @Sql({"data-hsqldb.sql"})
+    @Sql({"carInsert.sql"})
     public void shouldFindByTypeAndMark() {
         //given
 //        CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
@@ -93,7 +85,6 @@ public class CarServiceTest {
         //then
         Assertions.assertThat(foundCars.size()).isEqualTo(1);
     }
-
 
 
 

@@ -9,7 +9,6 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "office")
-
 public class OfficeEntity extends BaseEntity{
 
     @Id
@@ -28,7 +27,7 @@ public class OfficeEntity extends BaseEntity{
     private String email;
 
     @OneToOne(mappedBy = "office", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
+            fetch = FetchType.LAZY)
     private EmployeeEntity employee;
 
   /*  @OneToOne(mappedBy = "customer", cascade = CascadeType.ALL,
@@ -36,11 +35,11 @@ public class OfficeEntity extends BaseEntity{
     private CustomerEntity customer;*/
 
     @OneToOne(mappedBy = "officeFrom", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
+            fetch = FetchType.LAZY)
     private LoanEntity loanFrom;
 
     @OneToOne(mappedBy = "officeTo", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
+            fetch = FetchType.LAZY)
     private LoanEntity loanTo;
 
     public Integer getId() {

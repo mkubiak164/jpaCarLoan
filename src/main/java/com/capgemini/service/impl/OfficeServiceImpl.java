@@ -78,4 +78,9 @@ public class OfficeServiceImpl implements OfficeService {
     public List<OfficeTO> findAllOffices() {
         return OfficeMapper.map2TOs(officeRepository.findAll());
     }
+
+    @Override
+    public OfficeTO findbyId(Integer id) {
+        return OfficeMapper.toOfficeTO(officeRepository.findOne(id));
+    }
 }
