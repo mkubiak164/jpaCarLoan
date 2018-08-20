@@ -2,6 +2,8 @@ package com.capgemini.domain;
 
 
 
+import com.sun.istack.internal.NotNull;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -9,9 +11,10 @@ import java.util.Date;
 
 @Entity
 @Table(name = "loan")
-public class LoanEntity {
+public class LoanEntity extends BaseEntity{
 
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "employee_id", length = 11)
     private Integer id;

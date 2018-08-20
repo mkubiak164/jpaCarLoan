@@ -32,6 +32,11 @@ public class EmployeeDAOImpl extends AbstractDao<EmployeeEntity, Integer> implem
         return query.getResultList();
     }
 
+    /**
+     * metoda pozwalająca wyszukać pracownika po wybranych informacjach reprezentowanych przez obiekt
+     * @param employeeSearchCriteria
+     * @return zwraca listę rezultatów
+     */
     @Override
     public List<EmployeeEntity> findEmployeeBy(EmployeeSearchCriteria employeeSearchCriteria) {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();

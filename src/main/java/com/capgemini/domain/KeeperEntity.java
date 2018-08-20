@@ -1,6 +1,8 @@
 package com.capgemini.domain;
 
 
+import com.sun.istack.internal.NotNull;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -8,9 +10,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "keeper")
-public class KeeperEntity {
+public class KeeperEntity extends BaseEntity{
 
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "keeper_id", length = 11)
     private Integer id;

@@ -6,6 +6,13 @@ public class EmployeeSearchCriteria {
     private Integer carId;
     private String position;
 
+    /**
+     * Metoda pozwalająca wyszukać pracowników wg kryteriów
+     * @param officeId - szukanie wg placówki
+     * @param carId - szukanie wg auta którym sie zajmują
+     * @param position - szukanie wg zajmowanego stanowiska
+     */
+
     public EmployeeSearchCriteria(Integer officeId, Integer carId, String position) {
         this.officeId = officeId;
         this.carId = carId;

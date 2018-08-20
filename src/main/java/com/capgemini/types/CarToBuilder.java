@@ -1,7 +1,6 @@
 package com.capgemini.types;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class CarToBuilder {
 
@@ -54,6 +53,11 @@ public class CarToBuilder {
         return this;
     }
 
+
+    /**
+     *
+     * @return zwraca obiekt zbudowany na podstawie wybranych parametrów
+     */
     public CarTO build() {
         return new CarTO(this.id, this.carType, this.mark, this.year, this.color, this.engineCapacity, this.power, this.mileage);
     }

@@ -3,6 +3,10 @@ package com.capgemini.mappers;
 import com.capgemini.domain.OfficeEntity;
 import com.capgemini.types.OfficeTO;
 
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 public class OfficeMapper {
 
     public static OfficeEntity toOfficeEntity(OfficeTO officeTO) {
@@ -35,6 +39,7 @@ public class OfficeMapper {
     }
 
 
-
-
+    public static List<OfficeTO> map2TOs(List<OfficeEntity> officeEntities) {
+        return officeEntities.stream().map(OfficeMapper::toOfficeTO).collect(Collectors.toList());
+    }
 }

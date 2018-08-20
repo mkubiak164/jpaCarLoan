@@ -2,15 +2,18 @@ package com.capgemini.domain;
 
 
 
+import com.sun.istack.internal.NotNull;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "emp_position")
-public class EmpPositionEntity {
+public class EmpPositionEntity extends BaseEntity{
 
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "position_id", length = 11)
     private Integer id;

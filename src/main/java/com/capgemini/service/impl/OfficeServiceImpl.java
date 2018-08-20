@@ -58,9 +58,24 @@ public class OfficeServiceImpl implements OfficeService {
         return EmployeeMapper.map2TOs(employeesFromOffice);
     }
 
+    /**
+     * metoda zwracająca opiekunów auta z danej placówki
+     * @param officeId
+     * @param carId
+     * @return
+     */
     @Override
     public List<EmployeeTO> findAllOfficeEmployeesByKeepCarId(Integer officeId, Integer carId) {
         List<EmployeeEntity> keeperFromOffice = employeeRepository.findAllOfficeEmployeesByKeepCarId(officeId, carId);
         return EmployeeMapper.map2TOs(keeperFromOffice);
+    }
+
+    /**
+     * metoda potrzebna do testów
+     * @return zwraca listę wszystkich placówek
+     */
+    @Override
+    public List<OfficeTO> findAllOffices() {
+        return OfficeMapper.map2TOs(officeRepository.findAll());
     }
 }

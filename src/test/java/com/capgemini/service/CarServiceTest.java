@@ -81,6 +81,7 @@ public class CarServiceTest {
 
     @Test
 //    @Sql({"carInsert.sql"})
+//    @Sql({"data-hsqldb.sql"})
     public void shouldFindByTypeAndMark() {
         //given
 //        CarTO carTO = new CarToBuilder().withCarType("Kombi").withMark("KIA").build();
